@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(129, 129, 129);
+}
+
+.post {
+    background: lightblue;
+    margin: 0.5em 0.5em 1em 0.5em;
+    padding: 1em;
+    font-size: 110%;
+    border-radius: 1em;
+}
+
+p {
+    line-height: 1.5em;
+  }
+
+.spoiler {
+    background: black;
+    cursor: pointer;
+    user-select: none;
+    transition: background .5s;
+    /* background: var(--spoiler-color) */
+}
+
+.spoiler:hover {
+    background: none;
+}
+
+/* :root {
+    --spoiler-color: #000
+} */
+
