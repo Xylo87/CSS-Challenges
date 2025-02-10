@@ -52,7 +52,7 @@ body {
     border: none;
 }
 
-.button:hover {
+.button-border:hover .button {
     color: var(--btn-color-hover);
 }
 
