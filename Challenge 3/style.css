@@ -9,20 +9,25 @@
     --search-focus-border: #3a71ca;
 }
 
-label {
+.hide {
     position: absolute;
     visibility: hidden;
 }
 
 .container {
     width: 40%;
+    min-width: 320px;
 }
 
 #search-field {
     width: 33%;
-    margin: 10%;
-    padding: 3px 2px;
+    margin: 2em;
+    line-height: 2em;
+    padding: 0 2px;
+    border-radius: 5px;
+    border: 1px solid;
     transition: width 0.5s;
+    border-color: var(--search-border);
 }
 
 #search-field:focus {
