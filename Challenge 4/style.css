@@ -87,5 +87,13 @@ html, body {
 
 
 
+@media screen and (max-width: 550px) {
+    
+    .card-details {
+        font-size: 85%;
+    }
+}
+
+
 
 
