@@ -10,4 +10,82 @@ html, body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background: var(--bg-main);
 }
+
+.card {
+    width: fit-content;
+    margin: 0 50px 50px 50px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--bg-card);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.card-thumbnail {
+    width: 100%;
+}
+
+.card-thumbnail img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.card-body {
+    width: 100%;
+    display: flex;
+    margin: 25px 0;
+}
+
+.card-avatar {
+    display: flex;
+    width: 20%;
+    margin-right: 20px;
+}
+
+.card-avatar img {
+    width: 100%;
+    border-radius: 25px;
+    object-fit: contain;
+}
+
+.card-details {
+    font-family: var(--font-main);
+    color: var(--username);
+    font-size: 120%;
+    line-height: 0.4em;
+}
+
+.card-stats {
+    position: absolute;
+    visibility: hidden;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    color: #b7bbc8;
+    align-self: flex-start;
+    margin-bottom: 0;
+}
+
+.card-stats li {
+    margin: 0 5px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 125%;
+    font-family: var(--font-main);
+    background: var(--bg-stats);
+    color: var(--username);
+}
+
+.card:hover .card-stats {
+    position: static;
+    visibility: visible;
+}
+
+
+
+
+
