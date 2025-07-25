@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    gap: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    transform: rotate(45deg);
+    animation: turnAround 1.5s infinite;
+}
+
+.square1 {
+    width: 50px;
+    height: 50px;
+    background: orangered;
+}
+
+.square2 {
+    width: 50px;
+    height: 50px;
+    background: rgb(12, 101, 21);
+}
+
+.square3 {
+    width: 50px;
+    height: 50px;
+    background: rgb(184, 18, 184);
+}
+
+
+@keyframes turnAround {
+    0% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(135deg);
+    }
+}
