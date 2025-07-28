@@ -1,0 +1,46 @@
+:root {
+    --black: #000000;
+    --red: #DE0002;
+    --yellow: #FFCE00;
+    --flag-height: 350px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag-germany {
+    aspect-ratio: 5/3;
+    height: var(--flag-height);
+    /* width: calc(var(--flag-height) * 5/3); */
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(3, 1fr); */
+}
+
+.stripe {
+    /* flex-grow: 1; */
+}
+
+.black {
+    background: var(--black);
+}
+
+.red {
+    background: var(--red);
+}
+
+.yellow {
+    background: var(--yellow);
+}

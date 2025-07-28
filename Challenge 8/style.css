@@ -1,0 +1,53 @@
+:root {
+    --bg-word: #5134ff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container p {
+    font-size: 500%;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.keyWord {
+    margin-left: -10px;
+    padding: 7px 20px;
+    background: var(--bg-word);
+    color: white;
+    border-radius: 10px;
+}
+
+.keyWord::before {
+    content: "";
+    animation: carousel 5s infinite;
+}
+
+@keyframes carousel {
+    0% {
+        content: "Bansheebot";
+    }
+    25% {
+        content: "Kazel";
+    }
+    50% {
+        content: "Isimorn";
+    }
+    75% {
+        content: "Kiouze";
+    }
+    100% {
+        content: "Bansheebot";
+    }
+}
