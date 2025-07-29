@@ -1,0 +1,26 @@
+:root {
+    --red: #BC022C;
+    --flag-height: 350px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag-japan {
+    background: white;
+    aspect-ratio: 3/2;
+    height: var(--flag-height);
+    display: grid;
+}
+
