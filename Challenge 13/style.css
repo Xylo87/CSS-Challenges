@@ -21,6 +21,15 @@ body {
     background: white;
     aspect-ratio: 3/2;
     height: var(--flag-height);
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    background: var(--red);
+    height: calc(var(--flag-height) * 3 / 5);
+    width: calc(var(--flag-height) * 3 / 5);
+    border-radius: 50%;
 }
 

@@ -1,0 +1,51 @@
+:root {
+   --orange: #E15307;
+   --white: #FFFFFF;
+   --green: #10AF2A;
+   --flag-height: 500px;
+   --stripe-height: calc(var(--flag-height) / 3);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag-niger {
+    aspect-ratio: 7 / 6;
+    height: var(--flag-height);
+}
+
+.stripe {
+    height: var(--stripe-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    height: calc(var(--stripe-height) * .85);
+    width: calc(var(--stripe-height) * .85);
+    background: var(--orange);
+    border-radius: 50%;
+}
+
+.orange {
+    background: var(--orange);
+}
+
+.white {
+    background: var(--white);
+}
+
+.green {
+    background: var(--green);
+}
