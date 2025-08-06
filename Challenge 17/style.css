@@ -1,0 +1,60 @@
+:root {
+    --toggle-switch-bg: #232428;
+    --toggle-border: #232428;
+    --toggle-bg: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-wrap {
+    width: 100px;
+    height: 50px;
+    border: solid 3px var(--toggle-border);
+    border-radius: 25px;
+    position: relative;
+    
+    /* > centrer le switch dans le bouton
+    padding: ; */
+}
+
+/* label {
+    > styliser directement le label
+} */
+
+.toggle-input {
+    visibility: hidden;
+}
+
+.toggle-switch {
+    /* > même hauteur que le container
+    height: 50px; */
+
+    width: 37.5px;
+    height: 37.5px;
+    border-radius: 50%;
+    background: var(--toggle-switch-bg);
+    position: absolute;
+    top: 50%;
+    transform: translate(5px, -50%);
+    transition: all .5s;
+}
+
+.toggle-switch:hover {
+    cursor: pointer;
+}
+
+.toggle-input:checked + .toggle-switch {
+    transform: translate(52.5px, -50%);
+}
+
