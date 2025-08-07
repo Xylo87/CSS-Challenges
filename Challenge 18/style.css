@@ -1,0 +1,49 @@
+:root {
+    --card-height: 600px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 0.8;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    aspect-ratio: 2 / 3;
+    height: var(--card-height);
+    border: solid;
+    border-radius: 12px;
+    padding: 15px 15px;
+}
+
+.top, .bottom {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.center {
+    font-size: 9rem;
+    align-self: center;
+}
+
+.bottom {
+    align-self: flex-end;
+    transform: rotate(180deg);
+}
