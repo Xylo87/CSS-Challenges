@@ -1,0 +1,75 @@
+:root {
+    --font: 'Karla', sans-serif;
+    --font-color: #fff;
+    --grad1: #feda75;
+    --grad2: #fa7e1e;
+    --grad3: #d62976;
+    --grad4: #962fbf;
+    --grad5: #4f5bd5;
+    --viewed: gray;
+    --bg-main: #000;
+    --bg-live: red;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg-main);
+    font-family: var(--font);
+    color: var(--font-color);
+    min-height: 100vh;
+}
+
+.stories-menu {
+    margin: 50px 0 0 25px;
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.story p {
+    margin-top: 20px;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.img-wrapper {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.new .img-wrapper {
+    background: linear-gradient(to top right, var(--grad1), var(--grad2), var(--grad3), var(--grad4), var(--grad5));
+}
+
+.viewed .img-wrapper {
+    background: grey;
+}
+
+.live .img-wrapper::after {
+    content: 'LIVE';
+    position: absolute;
+    bottom: -14px;
+    background: var(--bg-live);
+    padding: 2.5px 8px;
+    border: solid 4px black;
+    font-weight: 900;
+}
+
+.img-wrapper img {
+    border: 5px solid black;
+    border-radius: 50%;
+    width: 92.5%;
+    height: 92.5%;
+    object-fit: cover;
+}
