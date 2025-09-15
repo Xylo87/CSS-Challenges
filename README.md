@@ -13,15 +13,13 @@ Les différents challenges permettent d'appréhender des notions intermédiaires
 ---
 
 ## 2. Accès
-1. Accédez directement au projet via [ce lien](https://xylo87.github.io/CSS-Challenges.git)
-
-2. Clonez ce projet depuis GitHub :
+1. Clonez ce projet depuis GitHub :
 ```bash
    git clone https://github.com/Xylo87/CSS-Challenges.git
    cd CSS-Challenges
 ```
 
-3. Ouvrir les fichiers *index.html* directement dans un navigateur ou au sein d'un éditeur de code
+2. Ouvrir les fichiers *index.html* directement dans un navigateur ou au sein d'un éditeur de code
 
 ---
 
